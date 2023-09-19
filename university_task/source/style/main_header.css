@@ -78,6 +78,27 @@ body {
       display: none;
   }
 
+
+
+
+
+
+  .btn {
+    padding: 10px 20px;
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ff3300;
+}
+
+
+
+
   /* Адаптация для мобильных устройств */
   @media screen and (max-width: 768px) {
     header {
