@@ -1,0 +1,215 @@
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 229, 194);
+  }
+
+  .navbar {
+    background-color:#fff;
+    padding: 1.5% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-content {
+    display: flex;
+    align-items: center;
+  }
+
+  h1 {
+    font-family: "Georgia", sans-serif;
+    font-size: 1.7em;
+    color:black;
+    margin: 0;
+    padding: 0 20px;
+    margin-right: 1em;
+  }
+
+  h2 {
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    color: black;
+    padding-right: 20px;
+  }
+
+  .contact-info {
+    font-size: 18px;
+    color: black;
+    text-align: right;
+    padding-right: 20px;
+    margin: 0;
+  }
+
+  .contact-info p {
+    margin: 5px 0;
+  }
+
+  .nav-list {
+    background-color: #FF8B13;
+    border-radius: 12px;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 50px;
+    display: flex;
+    list-style: none;
+
+  }
+
+  .nav-list {
+    display: flex;
+  }
+
+  .nav-list a {
+      display: block;
+      padding: 1em;
+      text-decoration: none;
+      color:aliceblue;
+      margin: 0 37px;
+  }
+
+  .nav-list a:hover {
+      background-color: green;
+  }
+
+  .nav-btn {
+      display: none;
+  }
+
+  /* Адаптация для мобильных устройств */
+  @media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 1.3em;
+      margin-left: 0;
+      padding-right: 10px;
+      margin-right: 1.1em;
+    }
+
+    h2 {
+      padding-left: 10px;
+      font-size: 0.7em;
+      padding-right: 20px;
+    }
+
+    .header-content {
+      text-align: center;
+      padding: 0;
+    }
+
+    .contact-info {
+      text-align: center;
+      padding: 0;
+      font-size: 12px;
+    }
+
+    .nav-btn {
+      font-size: 2em;
+      padding-inline: 10px;
+      padding-bottom: 0;
+      padding-right: 5px;
+      border: none;
+      background-color: #fff;
+      color:#FF8B13;
+      display: block;
+      cursor: pointer;
+    }
+
+    .nav-list {
+      display: none;
+    }
+
+    .drop:hover .nav-list{
+      display: block;
+      position: absolute;
+      top: 63px;
+      right: 0;
+      background-color: #FF8B13;
+      font-size: 10px;
+      border-radius: 0;
+      margin-right: 0;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+}
+
+  @media screen and (max-width: 575px) {
+    h1 {
+      padding-right: 0;
+    }
+
+    h2 {
+      display: none;
+    }
+    .contact-info {
+      padding-left: 5px;
+    }
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1100px) {
+    header {
+      flex-direction: column;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 1.5% 0;
+      font-size: 1.5em;
+      margin-left: 10px;
+      margin-right: 1.2em;
+    }
+
+    h2 {
+      padding-left: 10px;
+      font-size: 0.7em;
+      padding-right: 20px;
+    }
+
+    .header-content {
+      text-align: center;
+      padding: 0;
+    }
+
+    .contact-info {
+      text-align: center;
+      padding: 0;
+      font-size: 18px;
+    }
+
+    .nav-btn {
+      font-size: 2em;
+      padding-inline: 10px;
+      padding-bottom: 6px;
+      border: none;
+      background-color: #fff;
+      color:#FF8B13;
+      display: block;
+      cursor: pointer;
+    }
+
+    .nav-list {
+      display: none;
+    }
+
+    .drop:hover .nav-list{
+      display: block;
+      position: absolute;
+      top: 90px;
+      right: 0;
+      background-color: #FF8B13;
+      border-radius: 0;
+      margin-right: 0;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+  }
