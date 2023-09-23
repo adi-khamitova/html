@@ -23,8 +23,7 @@ body {
     font-size: 1.7em;
     color:black;
     margin: 0;
-    padding: 0 20px;
-    margin-right: 1em;
+    margin-left: 1vw;
   }
 
   h2 {
@@ -38,31 +37,31 @@ body {
     font-size: 18px;
     color: black;
     text-align: right;
-    padding-right: 20px;
     margin: 0;
+    padding-right: 5vw;
   }
 
   .contact-info p {
     margin: 5px 0;
   }
 
-  .nav-list {
+  .nav-list-showed {
     background-color: #FF8B13;
     border-radius: 12px;
     padding: 0;
     display: flex;
     justify-content: space-around;
-    margin-right: 50px;
     display: flex;
     list-style: none;
-
+    margin-right: 10vw;
+    margin-left: 30vmin;
   }
 
-  .nav-list {
+  .nav-list-showed {
     display: flex;
   }
 
-  .nav-list a {
+  .nav-list-showed a {
       display: block;
       padding: 1em;
       text-decoration: none;
@@ -70,18 +69,13 @@ body {
       margin: 0 37px;
   }
 
-  .nav-list a:hover {
+  .nav-list-showed a:hover {
       background-color: green;
   }
 
   .nav-btn {
       display: none;
   }
-
-
-
-
-
 
   .btn {
     padding: 10px 20px;
@@ -96,6 +90,10 @@ body {
     background-color: #ff3300;
 }
 
+
+.nav-list-unshowed {
+  display: none;
+}
 
 
 
@@ -142,11 +140,11 @@ body {
       cursor: pointer;
     }
 
-    .nav-list {
+    .nav-list-showed {
       display: none;
     }
 
-    .drop:hover .nav-list{
+    .drop:hover .nav-list-unshowed{
       display: block;
       position: absolute;
       top: 63px;
@@ -216,11 +214,11 @@ body {
       cursor: pointer;
     }
 
-    .nav-list {
+    .nav-list-showed {
       display: none;
     }
 
-    .drop:hover .nav-list{
+    .drop:hover .nav-list-unshowed{
       display: block;
       position: absolute;
       top: 90px;
