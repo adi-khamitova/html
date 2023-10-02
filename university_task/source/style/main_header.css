@@ -9,7 +9,7 @@ body {
     background-color:#fff;
     padding: 1.5% 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
   }
 
@@ -38,7 +38,7 @@ body {
     color: black;
     text-align: right;
     margin: 0;
-    padding-right: 5vw;
+    margin-left: 10vw;
   }
 
   .contact-info p {
@@ -53,8 +53,8 @@ body {
     justify-content: space-around;
     display: flex;
     list-style: none;
-    margin-right: 10vw;
-    margin-left: 30vmin;
+    margin-right: 0vw;
+    margin-left: 5vw;
   }
 
   .nav-list-showed {
@@ -66,7 +66,7 @@ body {
       padding: 1em;
       text-decoration: none;
       color:aliceblue;
-      margin: 0 37px;
+      margin: 0 1vw;
   }
 
   .nav-list-showed a:hover {
@@ -97,18 +97,19 @@ body {
 
 
 
+
+
+
   /* Адаптация для мобильных устройств */
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 549px) {
     header {
       flex-direction: column;
     }
 
     h1 {
       text-align: center;
-      font-size: 1.3em;
+      font-size: 4.5vw;
       margin-left: 0;
-      padding-right: 10px;
-      margin-right: 1.1em;
     }
 
     h2 {
@@ -120,12 +121,14 @@ body {
     .header-content {
       text-align: center;
       padding: 0;
+      margin-left: 4vw;
     }
 
     .contact-info {
       text-align: center;
       padding: 0;
-      font-size: 12px;
+      font-size: 3vw;
+      margin-left: 5vw;
     }
 
     .nav-btn {
@@ -160,7 +163,12 @@ body {
   }
 }
 
-  @media screen and (max-width: 575px) {
+
+
+
+
+/*
+  @media screen and (max-width: 549px) {
     h1 {
       padding-right: 0;
     }
@@ -172,8 +180,13 @@ body {
       padding-left: 5px;
     }
   }
+*/
 
-  @media screen and (min-width: 769px) and (max-width: 1100px) {
+
+
+
+
+  @media screen and (min-width: 550px) and (max-width: 1100px) {
     header {
       flex-direction: column;
     }
@@ -182,8 +195,7 @@ body {
       text-align: center;
       padding: 1.5% 0;
       font-size: 1.5em;
-      margin-left: 10px;
-      margin-right: 1.2em;
+      margin-left: 1vw;
     }
 
     h2 {
@@ -195,6 +207,7 @@ body {
     .header-content {
       text-align: center;
       padding: 0;
+      margin-left: 4vw;
     }
 
     .contact-info {
